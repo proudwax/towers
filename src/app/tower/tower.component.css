@@ -1,0 +1,40 @@
+.tower {
+    margin-left: 10px;
+    margin-right: 10px;
+
+    display: flex;
+    flex-flow: column;
+
+    align-items: center; 
+
+    font-family: Helvetica, sans-serif;
+}
+
+.tower__title {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+
+    margin: 10px 0;
+}
+
+.tower__indicator {
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+
+    margin: 0 0 20px;
+    border-bottom: 3px solid #21B149;
+    
+    transition: all .25s ease-out;
+}
+.tower__indicator_warning {
+    border-color: red;
+}

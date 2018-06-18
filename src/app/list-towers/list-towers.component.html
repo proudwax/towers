@@ -1,0 +1,4 @@
+<div class="list-towers">
+  <span class="list-towers__loading" *ngIf="!towers">Loading...</span>
+  <app-tower *ngFor="let tower of towers" [tower]="tower"></app-tower>
+</div>

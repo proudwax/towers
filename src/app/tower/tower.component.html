@@ -1,0 +1,69 @@
+<div class="tower">
+    <h4 class="tower__title">
+        {{tower.title}}
+    </h4>
+    <p class="tower__indicator" [ngClass]="{'tower__indicator_warning': tower.indicator.minValue === tower.indicator.value || tower.indicator.maxValue === tower.indicator.value}">
+        {{level}}%
+    </p>
+    <!-- <img class="tower__image" src="assets/tower.svg"> -->
+    <!-- <object #svgImage class="tower__image" type="image/svg+xml" data="assets/tower.svg">
+        <img class="tower__image" src="assets/tower.svg">
+    </object> -->
+    <svg width="155px" height="497px" viewBox="0 0 155 497" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>Untitled</title>
+        <desc>Created with Sketch.</desc>
+        <defs>
+            <linearGradient x1="2.45287691%" y1="50.0068553%" x2="100.021923%" y2="49.9967356%" id="linearGradient-1">
+                <stop stop-color="#616166" offset="0%"></stop>
+                <stop stop-color="#9B9B9B" offset="21%"></stop>
+                <stop stop-color="#48484F" offset="100%"></stop>
+            </linearGradient>
+            <linearGradient x1="2.45287691%" y1="49.9458107%" x2="100.021923%" y2="49.9458107%" id="linearGradient-2">
+                <stop stop-color="#616166" offset="0%"></stop>
+                <stop stop-color="#9B9B9B" offset="21%"></stop>
+                <stop stop-color="#48484F" offset="100%"></stop>
+            </linearGradient>
+            <linearGradient x1="2.45287691%" y1="49.9985854%" x2="100.021923%" y2="49.9985854%" id="linearGradient-3">
+                <stop stop-color="#616166" offset="0%"></stop>
+                <stop stop-color="#9B9B9B" offset="21%"></stop>
+                <stop stop-color="#48484F" offset="100%"></stop>
+            </linearGradient>
+            <linearGradient x1="2.45287691%" y1="49.9425462%" x2="100.021923%" y2="49.9425462%" id="linearGradient-4">
+                <stop stop-color="#616166" offset="0%"></stop>
+                <stop stop-color="#9B9B9B" offset="21%"></stop>
+                <stop stop-color="#48484F" offset="100%"></stop>
+            </linearGradient>
+            <linearGradient x1="0.0170429716%" y1="50.0049608%" x2="100.023598%" y2="50.0049608%" id="linearGradient-5">
+                <stop stop-color="#616166" offset="0%"></stop>
+                <stop stop-color="#9B9B9B" offset="21%"></stop>
+                <stop stop-color="#48484F" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Silo-towers" transform="translate(0.000000, 2.000000)">
+                <g id="Group">
+                    <rect id="Rectangle-path" fill="#CBCBCB" fill-rule="nonzero" x="0" y="4.9" width="154.6" height="4.3"></rect>
+                    <rect id="Rectangle-path" fill="url(#linearGradient-1)" fill-rule="nonzero" x="8.6" y="12" width="137.3" height="91.9"></rect>
+                    <rect id="Rectangle-path" fill="#CBCBCB" fill-rule="nonzero" x="0" y="410.7" width="154.6" height="4.3"></rect>
+                    <rect id="Rectangle-path" fill="url(#linearGradient-2)" fill-rule="nonzero" x="8.6" y="113.5" width="137.3" height="91.9"></rect>
+                    <rect id="Rectangle-path" fill="url(#linearGradient-3)" fill-rule="nonzero" x="8.6" y="214.9" width="137.3" height="91.9"></rect>
+                    <rect id="Rectangle-path" fill="url(#linearGradient-4)" fill-rule="nonzero" x="8.6" y="316.4" width="137.3" height="91.9"></rect>
+                    <polygon id="Shape" fill="url(#linearGradient-5)" fill-rule="nonzero" points="68.6 494.4 8.6 417.8 145.9 417.8 86 494.4"></polygon>
+                    <rect id="Rectangle-path-size" [style.height]="towerHeight || 0" [style.y]="towerCoordsY || 408" fill="#21B249" opacity="0.5"
+                        x="18.9" width="118.5"></rect>
+                    <rect id="Rectangle-path" fill="#CBCBCB" fill-rule="nonzero" x="0" y="207.8" width="154.6" height="4.3"></rect>
+                    <rect id="Rectangle-path" fill="#CBCBCB" fill-rule="nonzero" x="0" y="309.2" width="154.6" height="4.3"></rect>
+                    <rect id="Rectangle-path" fill="#CBCBCB" fill-rule="nonzero" x="0" y="106.3" width="154.6" height="4.3"></rect>
+                    <path d="M53.7,0.6 L100.9,0.6" id="Shape" stroke="#8B959F" stroke-width="4"></path>
+                    <path d="M75.9,477.1 L25.4,477.1 C19.9,477.1 15.4,472.6 15.4,467.1 L15.4,443.2 C15.4,437.7 19.9,433.2 25.4,433.2 L75.9,433.2 C81.4,433.2 85.9,437.7 85.9,443.2 L85.9,467.1 C85.9,472.6 81.4,477.1 75.9,477.1 Z"
+                        id="Shape" stroke="#21B149" stroke-width="3"></path>
+                </g>
+            </g>
+        </g>
+    </svg>
+
+    <p class="tower__title">Масса карналита</p>
+    <p class="tower__indicator">
+        {{tower.weight}}
+    </p>
+</div>
